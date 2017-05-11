@@ -19,11 +19,6 @@ class Pin extends React.Component {
 
       </div>
 
-
-
-
-
-
         <p className="pin-url"></p>
 
       </div>

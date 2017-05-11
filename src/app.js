@@ -9,12 +9,15 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+
       data: {urls: []},
+
       fakeData: {
         name: "Kevin",
         password: "qwerty",
         urls: [
           {
+
             url: "www.craiglist.com/deal",
             notes: ["Great Deal", "Greater Deal"]
           },
@@ -22,10 +25,12 @@ class App extends React.Component {
           {
             url: "www.craiglist.com/job",
             notes: ["Great KEVIN", "Greater Job"]
+
           }
         ]
       }
     };
+
 
     this.getData = this.getData.bind(this);
   }
@@ -39,6 +44,7 @@ class App extends React.Component {
 
         console.log('DATA: ',this.state.data);
 
+
       })
       .catch(error => {
         console.error(error);
@@ -46,6 +52,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+
 
     this.getData();
 
@@ -55,11 +62,13 @@ class App extends React.Component {
 
   // }
 
+
   // onPinClick(pin) {
 
   // }
 
   render() {
+
     console.log('Rendering...................');
 
     return (
@@ -76,6 +85,7 @@ class App extends React.Component {
       </div>
 
     );
+
   }
 }
 
