@@ -24,20 +24,16 @@ class App extends React.Component {
   }
 
   fetch() {
-
     console.log('ACCOUNT: ', account.user_id);
-
     axios
       .get("/api/users/" + account.user_id)
       .then(res => {
-
         console.log("DATA1: ", res.data[0]);
 
         if (res.data.length > 0) {
           this.setState({ data: res.data[0] });
         }
 
-        //console.log("DATA2: ", this.state.data);
       })
       .catch(error => {
         console.error(error);
@@ -74,7 +70,6 @@ class App extends React.Component {
 
   render() {
     console.log("DATA3: ", this.state.data);
-
     return (
       <div>
         <Nav auth={auth} />
